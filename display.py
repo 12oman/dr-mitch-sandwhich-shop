@@ -1,9 +1,10 @@
 menu = ["ham", "butter", "tomato", "bread"]
 
-def display(menu, name):
-   
-    print(f'========={name}===========')
+def display(_menu,_name):
     
-    print(menu)
+    contents = f"========={_name}===========" + "\n"
+    for item in _menu:
+        contents += f"{item}\n"
+    return contents
 
-display(menu, 'Menu')
+print(display(menu, 'Menu'))
