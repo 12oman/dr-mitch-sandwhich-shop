@@ -1,9 +1,9 @@
 menu = ["ham", "butter", "tomato", "bread"]
 
-def display(menu):
+def display(menu, name):
    
-    print('=========Menu===========')
+    print(f'========={name}===========')
     
     print(menu)
 
-display(menu)
+display(menu, 'Menu')
